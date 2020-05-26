@@ -9,6 +9,23 @@
   --success-color: #28a745;
 }
 
+.users-style {
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .users-style {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1100px) {
+  .users-style {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
